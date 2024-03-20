@@ -36,8 +36,24 @@ body {
 /* header */
 
 header {
-  padding: 31px 0 18px 0;
+  position: fixed;
+  top: 0;
   border-bottom: 0.1px solid grey;
+  width: 100%;
+  height: 95px;
+  background: white;
+}
+
+main {
+  padding-top: 95px;
+}
+
+header .container {
+  max-width: calc(1338px + 20px + 20px);
+}
+
+.flex .header-content {
+  align-items: center;
 }
 
 .btn-1 {
@@ -50,7 +66,7 @@ header {
   height: 45px;
   padding: 0 36px;
   width: 120px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .btn-2 {
   background: var(--orange);
@@ -72,13 +88,11 @@ header .btn-2 {
 
 .btn-group {
   margin-left: auto;
-  /* padding-bottom: 10px; */
+  gap: 10px;
 }
 
 nav {
-  margin-left: 51px;
-  padding-top: 5px;
-  /* gap: 42px; */
+  /* margin-left: 51px; */
 }
 nav a {
   width: 400;
@@ -87,10 +101,208 @@ nav a {
   color: rgba(0, 0, 0, 1);
 }
 
-header nav a:not(:last-of-type) {
+header nav a:not(:last-child) {
   margin-right: 42px;
 }
 
 header nav {
   margin-right: 100px;
+}
+
+.header-content {
+  padding: 25px 0 24px;
+  gap: 51px;
+  align-items: center;
+}
+
+/* sec-product */
+
+.info-product h1 {
+  width: 552px;
+  height: 210px;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+}
+
+.info-product p {
+  width: 471px;
+  height: 140px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  margin-top: 51px;
+}
+
+#product {
+  padding: 129px 0 137px;
+  /* padding: 97px 0 137px; */
+}
+
+.btn-group-2 {
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.btn-3 {
+  background: var(--orange);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  /* padding: 0 41px 0 42px; */
+  width: 160px;
+  height: 60px;
+  color: white;
+  border: none;
+}
+
+.btn-4 {
+  background-color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  width: 160px;
+  height: 60px;
+}
+
+.test-period p {
+  width: 369px;
+  height: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+  bottom: 25px;
+}
+
+.img-1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.img-1 img {
+  position: relative;
+  left: 540px;
+  bottom: 560px;
+}
+
+/* sec-2 */
+
+#sec-2 {
+  padding: 108px 0 104px;
+  background: rgba(255, 156, 125, 1);
+}
+
+#sec-2 h2 {
+  height: 120px;
+  width: 720px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  /* display: flex; */
+  margin-left: 415px;
+}
+
+.logos {
+  margin-top: 70px;
+  gap: 103px;
+  padding-left: 102px;
+}
+
+/* features */
+
+#features {
+  padding: 241px 0 274px;
+}
+
+/* .flex-item {
+  min-width: 1290px;
+} */
+
+.fead-1 h2 {
+  width: 493px;
+  height: 120px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+.fead-1 p {
+  width: 491px;
+  height: 120px;
+  margin: 30px 0 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fead-1 h6 {
+  width: 96px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#features .fead-1 img {
+  position: absolute;
+  /* right: 0; */
+  width: 632px;
+  height: 632px;
+  z-index: -1;
+}
+
+/* намагався додати - .fead-1 .rc ,але не працює як треба*/
+.rc {
+  position: relative;
+  width: 50%;
+  /* display: flex; */
+  bottom: 145px;
+  left: 165px;
+}
+
+/* .fead-2 h2 {
+  width: 379px;
+  height: 120px;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 801px;
+}
+.fead-2 p {
+  width: 450px;
+  height: 150px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 30px 0 36px;
+}
+.fead-2 h6 {
+  width: 96px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+} */
+
+#features .fead-2 img {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.fead-2 .lc {
+  position: relative;
+  left: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+#features .fead-2 {
+  margin-top: 740px;
 }
