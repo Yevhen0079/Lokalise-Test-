@@ -42,6 +42,7 @@ header {
   width: 100%;
   height: 95px;
   background: white;
+  z-index: 999;
 }
 
 main {
@@ -264,13 +265,14 @@ header nav {
   left: 165px;
 }
 
-/* .fead-2 h2 {
-  width: 379px;
+.fead-2 h2 {
+  width: 350px;
   height: 120px;
   line-height: 60px;
   font-weight: 600;
   font-size: 50px;
-  margin-top: 801px;
+  margin-top: 701px;
+  margin-left: 600px;
 }
 .fead-2 p {
   width: 450px;
@@ -279,6 +281,7 @@ header nav {
   font-weight: 400;
   font-size: 20px;
   margin: 30px 0 36px;
+  margin-left: 600px;
 }
 .fead-2 h6 {
   width: 96px;
@@ -286,23 +289,98 @@ header nav {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-} */
+  margin-left: 600px;
+}
 
 #features .fead-2 img {
   position: absolute;
-  left: 0;
+  /* left: 100px; */
   z-index: -1;
   /* width: 100%;
   height: 100%; */
 }
 
-.fead-2 .lc {
+/* .lc {
   position: relative;
-  left: 100px;
-  width: 100%;
-  height: 100%;
+  left: px;
+} */
+
+#features .fead-2 img {
+  margin-top: 401px;
 }
 
-#features .fead-2 {
-  margin-top: 740px;
+.fead-3 {
+  margin-top: 387px;
+}
+.fead-3 h2 {
+  width: 397px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+.fead-3 p {
+  width: 520px;
+  height: 150px;
+  margin: 30px 0 35px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fead-3 h6 {
+  width: 96px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#features .fead-3 img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#features .fead-3 img {
+  position: relative;
+  right: 33px;
+  bottom: 22px;
+}
+
+#features .fead-4 img {
+  margin-top: 70px;
+}
+
+.fead-4 h2 {
+  width: 348px;
+  height: 120px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 337px;
+  position: relative;
+  right: 30px;
+}
+.fead-4 p {
+  width: 520px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 33px 0 27px;
+  position: relative;
+  right: 30px;
+}
+.fead-4 h6 {
+  width: 96px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  right: 30px;
+}
+
+.underline {
+  text-decoration: underline;
 }
