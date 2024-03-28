@@ -115,7 +115,7 @@ header nav {
 
 /* sec-product */
 
-.info-product h1 {
+#product h1 {
   width: 552px;
   height: 210px;
   font-weight: 600;
@@ -123,8 +123,8 @@ header nav {
   line-height: 70px;
 }
 
-.info-product p {
-  width: 471px;
+#product .left-block p {
+  max-width: 471px;
   height: 140px;
   font-weight: 400;
   font-size: 25px;
@@ -133,16 +133,15 @@ header nav {
 }
 
 #product {
-  padding: 129px 0 137px;
-  /* padding: 97px 0 137px; */
+  padding: 129px 0 120px;
 }
 
-.btn-group-2 {
+#product .btn-group-2 {
   margin-top: 50px;
   gap: 10px;
 }
 
-.btn-3 {
+#product .btn-3 {
   background: var(--orange);
   font-weight: 600;
   font-size: 16px;
@@ -155,7 +154,7 @@ header nav {
   border: none;
 }
 
-.btn-4 {
+#product .btn-4 {
   background-color: var(--white);
   font-weight: 600;
   font-size: 16px;
@@ -167,7 +166,7 @@ header nav {
   height: 60px;
 }
 
-.test-period p {
+#product .test-period p {
   width: 369px;
   height: 25px;
   font-weight: 400;
@@ -177,17 +176,34 @@ header nav {
   bottom: 25px;
 }
 
-.img-1 {
-  position: absolute;
-  z-index: -1;
+#product .img-1 {
+  margin-right: 30px;
 }
 
-.img-1 img {
+.flex-container {
+  display: flex;
+}
+
+#product .left-block {
+  flex: 1;
+  max-width: 620px;
+  height: 610px;
+}
+
+#product .right-block {
+  flex: 1;
+  max-width: 759px;
+  height: 529px;
   position: relative;
-  left: 540px;
-  bottom: 560px;
+  width: 100%;
 }
 
+#product .right-block img {
+  position: absolute;
+  right: -4px;
+  top: 18px;
+  /* width: 100%; */
+}
 /* sec-2 */
 
 #sec-2 {
@@ -201,15 +217,15 @@ header nav {
   font-weight: 600;
   font-size: 51px;
   line-height: 60px;
-  /* text-align: center; */
-  /* display: flex; */
-  margin-left: 388px;
-  padding-top: 15px;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0 auto;
 }
 
 #sec-2 .logos {
-  margin-top: 80px;
-  gap: 103px;
+  margin-top: 75px;
+  gap: 16px;
+  justify-content: space-between;
   padding-left: 25px;
 }
 
@@ -393,7 +409,6 @@ header nav {
 
 #sec-4 h2 {
   min-width: 890px;
-  height: 60px;
   font-weight: 600;
   font-size: 51px;
   line-height: 60px;
@@ -412,7 +427,6 @@ header nav {
 
 .grp-1 h4 {
   min-width: 120px;
-  height: 35px;
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
@@ -423,7 +437,6 @@ header nav {
 
 #sec-4 .grp-1 p {
   max-width: 370px;
-  height: 75px;
   margin-top: 20px;
   font-weight: 400;
   font-size: 18px;
@@ -440,7 +453,6 @@ header nav {
 
 .grp-2 h4 {
   min-width: 165px;
-  height: 30px;
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
@@ -450,7 +462,6 @@ header nav {
 
 #sec-4 .grp-2 p {
   max-width: 330px;
-  height: 75px;
   font-weight: 400;
   line-height: 25px;
   font-size: 18px;
@@ -466,7 +477,6 @@ header nav {
 
 .grp-3 h4 {
   max-width: 91px;
-  height: 35px;
   margin: 15px 0 23px;
   font-weight: 600;
   font-size: 25px;
@@ -477,7 +487,6 @@ header nav {
 
 #sec-4 .grp-3 p {
   max-width: 320px;
-  height: 75px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -497,7 +506,6 @@ header nav {
 
 .grp-4 h4 {
   width: 142px;
-  height: 35px;
   margin: 16px 0 20px;
   font-weight: 600;
   font-size: 25px;
@@ -508,7 +516,6 @@ header nav {
 
 #sec-4 .grp-4 p {
   max-width: 370px;
-  height: 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -521,7 +528,6 @@ header nav {
 }
 .grp-5 h4 {
   max-width: 229px;
-  height: 35px;
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
@@ -531,7 +537,6 @@ header nav {
 }
 #sec-4 .grp-5 p {
   max-width: 310px;
-  height: 75px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -545,7 +550,6 @@ header nav {
 }
 .grp-6 h4 {
   max-width: 54px;
-  height: 35px;
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
@@ -555,7 +559,6 @@ header nav {
 }
 #sec-4 .grp-6 p {
   max-width: 326px;
-  height: 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
