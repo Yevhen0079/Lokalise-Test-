@@ -32,7 +32,9 @@ body {
 .flex {
   display: flex;
 }
-
+.underline {
+  text-decoration: underline;
+}
 /* header */
 
 header {
@@ -104,7 +106,8 @@ header nav a:not(:last-child) {
 }
 
 header nav {
-  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-content {
@@ -276,7 +279,7 @@ header nav {
   order: 1; /* Установить порядок блока на 1, чтобы он оставался на месте после смены порядка */
 }
 .flex-item.order .left-c {
-  margin-left: 130px;
+  margin-left: 140px;
 }
 
 .left-c.fead-2 h3 {
@@ -313,7 +316,7 @@ header nav {
 /* sec-4 */
 
 #sec-4 {
-  padding: 120px 0 147px;
+  padding: 120px 0 80px;
   background-color: rgba(255, 248, 228, 1);
 }
 
@@ -324,163 +327,54 @@ header nav {
   line-height: 60px;
   text-align: center;
 }
-
-#sec-4 .flex-wrapper-1 {
-  gap: 110px;
-  margin-top: 79px;
+#sec-4 .flex-column {
+  /* flex-direction: column; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 84px;
+  padding: 0 45px;
 }
 
-/* GRP-1 */
-.grp-1 img {
-  padding-left: 125px;
+.margin-right-1 {
+  margin-right: 30px;
+}
+.margin-right-2 {
+  margin-right: 35px;
+}
+.margin-right-3 {
+  margin-right: 10px;
 }
 
-.grp-1 h4 {
-  min-width: 120px;
+.flex-column h6 {
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
-  text-align: left;
   margin-top: 20px;
-  padding-left: 145px;
-}
-
-#sec-4 .grp-1 p {
-  max-width: 370px;
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  padding-left: 40px;
   text-align: center;
 }
 
-/* GRP-2 */
-
-.grp-2 img {
-  margin-left: 86px;
-}
-
-.grp-2 h4 {
-  min-width: 165px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  margin-top: 12px;
-  margin-left: 85px;
-}
-
-#sec-4 .grp-2 p {
+.flex-column p {
   max-width: 330px;
-  font-weight: 400;
-  line-height: 25px;
-  font-size: 18px;
-  margin-top: 36px;
-  text-align: center;
-}
-
-/* GRP-3 */
-
-.grp-3 img {
-  margin-left: 84px;
-}
-
-.grp-3 h4 {
-  max-width: 91px;
-  margin: 15px 0 23px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  margin-left: 119px;
-  text-align: center;
-}
-
-#sec-4 .grp-3 p {
-  max-width: 320px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  /* padding-right: 30px; */
-}
-
-/* flex-wrapper-2 */
-
-.flex-wrapper-2 {
-  margin-top: 75px;
-}
-
-.grp-4 img {
-  padding-left: 125px;
-}
-
-.grp-4 h4 {
-  width: 142px;
-  margin: 16px 0 20px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  padding-left: 134px;
-}
-
-#sec-4 .grp-4 p {
-  max-width: 370px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  padding-left: 40px;
-}
-
-.grp-5 img {
-  margin-left: 195px;
-}
-.grp-5 h4 {
-  max-width: 229px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  margin-top: 15px;
-  margin-left: 160px;
-}
-#sec-4 .grp-5 p {
-  max-width: 310px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  margin-left: 121px;
   margin-top: 20px;
-}
-
-.grp-6 img {
-  margin-left: 205px;
-}
-.grp-6 h4 {
-  max-width: 54px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  margin-left: 255px;
-  margin-top: 15px;
-}
-#sec-4 .grp-6 p {
-  max-width: 326px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  margin-left: 122px;
-  margin-top: 23px;
+  margin-bottom: 70px;
+}
+.game-text p {
+  width: 281px;
+}
+.emails-text p {
+  max-width: 310px;
 }
 
 /* sec-5 */
 
 #sec-5 {
-  padding: 154px 0 217px;
+  padding: 154px 0 218px;
 }
 
 #sec-5 h2 {
@@ -554,15 +448,15 @@ header nav {
   padding-left: 29px;
 }
 .grp-9 p {
-  width: 409px;
+  width: 407px;
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
   margin-top: 30px;
   margin-bottom: 25px;
   padding-left: 29px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
 .grp-9 a {
   font-weight: 400;
@@ -669,6 +563,7 @@ header nav {
 
 #pricing {
   padding: 165px 0 162px;
+  text-align: center;
 }
 #pricing h2 {
   font-weight: 600;
@@ -689,7 +584,8 @@ header nav {
 #pricing img {
   width: 1023px;
   height: 445px;
-  margin-left: 130px;
+  /* text-align: center; */
+  width: 100%;
   margin-top: 30px;
 }
 #pricing button {
@@ -702,7 +598,7 @@ header nav {
   color: rgba(255, 255, 255, 1);
   border: none;
   margin-top: 22px;
-  margin-left: 550px;
+  margin-right: 12px;
   height: 60px;
 }
 
@@ -860,7 +756,7 @@ header nav {
 #case-studies .linie {
   border-bottom: 1px solid black;
   padding-bottom: 98px;
-  }
+}
 
 .flex-wrapper-7 {
   list-style: none;
