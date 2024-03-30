@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 1330px;
+  max-width: 1345px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -117,7 +117,7 @@ header nav {
 
 #product h1 {
   width: 552px;
-  height: 210px;
+
   font-weight: 600;
   font-size: 65px;
   line-height: 70px;
@@ -125,7 +125,7 @@ header nav {
 
 #product .left-block p {
   max-width: 471px;
-  height: 140px;
+
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
@@ -133,7 +133,7 @@ header nav {
 }
 
 #product {
-  padding: 129px 0 120px;
+  padding: 129px 0 145px;
 }
 
 #product .btn-group-2 {
@@ -168,7 +168,7 @@ header nav {
 
 #product .test-period p {
   width: 369px;
-  height: 25px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
@@ -187,32 +187,28 @@ header nav {
 #product .left-block {
   flex: 1;
   max-width: 620px;
-  height: 610px;
+  width: 100%;
 }
 
 #product .right-block {
-  flex: 1;
   max-width: 759px;
-  height: 529px;
   position: relative;
   width: 100%;
 }
 
 #product .right-block img {
   position: absolute;
-  right: -4px;
-  top: 18px;
-  /* width: 100%; */
+  width: 100%;
+  height: 100%;
 }
 /* sec-2 */
 
 #sec-2 {
-  padding: 108px 0 104px;
+  padding: 100px 0 104px;
   background: rgba(255, 156, 125, 1);
 }
 
 #sec-2 h2 {
-  height: 120px;
   max-width: 720px;
   font-weight: 600;
   font-size: 51px;
@@ -232,174 +228,88 @@ header nav {
 /* features */
 
 #features {
-  padding-top: 241px;
-  padding-bottom: 130px;
+  padding-top: 90px;
+  padding-bottom: 145px;
 }
 
-/* .flex-item {
-  min-width: 1290px;
-} */
+.flex-item {
+  display: flex;
+  max-width: 1290px;
+}
 
-.fead-1 h2 {
-  width: 493px;
-  height: 120px;
+.left-c {
+  max-width: 658px;
+  flex: 1;
+}
+.right-c {
+  max-width: 632px;
+  flex: 1;
+}
+
+.left-c h3 {
   font-weight: 600;
   font-size: 50px;
   line-height: 60px;
+  max-width: 493px;
+  padding-top: 145.5px;
 }
-.fead-1 p {
-  width: 491px;
-  height: 120px;
-  margin: 30px 0 30px;
+.left-c p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  max-width: 491px;
+  margin: 30px 0;
 }
-.fead-1 h6 {
-  width: 96px;
-  height: 30px;
+.left-c span {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+  width: 96px;
+}
+.flex-item.order {
+  display: flex;
+  flex-direction: row-reverse; /* Поменять порядок блоков на обратный */
 }
 
-#features .fead-1 img {
-  position: absolute;
-  /* right: 0; */
-  width: 632px;
-  height: 632px;
-  z-index: -1;
+.flex-item.order .left-c,
+.flex-item.order .right-c {
+  order: 1; /* Установить порядок блока на 1, чтобы он оставался на месте после смены порядка */
+}
+.flex-item.order .left-c {
+  margin-left: 130px;
 }
 
-/* намагався додати - .fead-1 .rc ,але не працює як треба*/
-.rc {
-  position: relative;
-  width: 50%;
-  /* display: flex; */
-  bottom: 145px;
-  left: 165px;
-}
-
-.fead-2 h2 {
+.left-c.fead-2 h3 {
   width: 350px;
-  height: 120px;
-  line-height: 60px;
-  font-weight: 600;
-  font-size: 50px;
-  margin-top: 701px;
-  margin-left: 600px;
+  margin-top: 250px;
 }
-.fead-2 p {
+.left-c.fead-2 p {
   width: 450px;
-  height: 150px;
-  line-height: 30px;
-  font-weight: 400;
-  font-size: 20px;
-  margin: 30px 0 36px;
-  margin-left: 600px;
 }
-.fead-2 h6 {
-  width: 96px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  margin-left: 600px;
+.right-c.fead-2 img {
+  margin-top: 240px;
 }
 
-#features .fead-2 img {
-  position: absolute;
-  /* left: 100px; */
-  z-index: -1;
-  /* width: 100%;
-  height: 100%; */
+.left-c.fead-3 {
+  margin-top: 20px;
+}
+.left-c.fead-3 h3 {
+  max-width: 397px;
+  margin-top: 240px;
+}
+.left-c.fead-3 p {
+  max-width: 507px;
+}
+.right-c.fead-3 img {
+  margin-top: 240px;
 }
 
-/* .lc {
-  position: relative;
-  left: px;
-} */
-
-#features .fead-2 img {
-  margin-top: 401px;
+.left-c.fead-4 h3 {
+  margin-top: 230px;
 }
-
-.fead-3 {
-  margin-top: 387px;
+.right-c.fead-4 img {
+  margin-top: 250px;
 }
-.fead-3 h2 {
-  width: 397px;
-  height: 60px;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
-}
-.fead-3 p {
-  width: 520px;
-  height: 150px;
-  margin: 30px 0 35px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-}
-.fead-3 h6 {
-  width: 96px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-#features .fead-3 img {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-
-#features .fead-3 img {
-  position: relative;
-  right: 33px;
-  bottom: 22px;
-}
-
-#features .fead-4 img {
-  margin-top: 70px;
-}
-
-.fead-4 h2 {
-  width: 348px;
-  height: 120px;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
-  margin-top: 337px;
-  position: relative;
-  right: 30px;
-}
-.fead-4 p {
-  width: 520px;
-  height: 120px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 33px 0 27px;
-  position: relative;
-  right: 30px;
-}
-.fead-4 h6 {
-  width: 96px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  right: 30px;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
 /* sec-4 */
 
 #sec-4 {
@@ -575,7 +485,6 @@ header nav {
 
 #sec-5 h2 {
   max-width: 1287px;
-  height: 60px;
   font-weight: 600;
   font-size: 51px;
   line-height: 60px;
@@ -586,7 +495,6 @@ header nav {
 }
 .grp-7 h4 {
   max-width: 164px;
-  height: 40px;
   font-weight: 600;
   font-size: 31px;
   line-height: 40px;
@@ -594,14 +502,12 @@ header nav {
 }
 .grp-7 p {
   max-width: 409px;
-  height: 180px;
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 25px;
 }
 .grp-7 a {
-  /* margin-top: 30px; */
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
@@ -613,7 +519,6 @@ header nav {
 }
 .grp-8 h4 {
   max-width: 168px;
-  height: 40px;
   font-weight: 600;
   font-size: 31px;
   line-height: 40px;
@@ -622,7 +527,6 @@ header nav {
 }
 .grp-8 p {
   max-width: 409px;
-  height: 180px;
   font-weight: 400;
   line-height: 30px;
   font-size: 20px;
@@ -643,7 +547,6 @@ header nav {
 }
 .grp-9 h4 {
   max-width: 166px;
-  height: 40px;
   margin-top: 58px;
   font-weight: 600;
   font-size: 31px;
@@ -652,7 +555,6 @@ header nav {
 }
 .grp-9 p {
   width: 409px;
-  height: 180px;
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
@@ -671,39 +573,32 @@ header nav {
 /* sec-6 */
 
 #sec-6 {
-  padding: 53px 0 137px;
+  padding: 53px 0 98px;
   background: rgba(201, 232, 242, 1);
 }
 
-.revoult-content {
+#sec-6 .left-content {
   max-width: 895px;
-  height: 275px;
 }
-.revoult-content p {
+
+.left-content h6 {
+  margin-top: 5px;
   font-weight: 400;
   font-size: 31px;
   line-height: 40px;
-  /* max-width: 920.7px; 895*/
-  padding-top: 10px;
 }
-#sec-6 .revoult-content #edward {
+.left-content p {
   max-width: 272px;
-  height: 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  margin: 15px 0 13px;
+  margin: 28px 0 5px;
 }
-
-/* #sec-6 #portret img {
-  position: absolute;
-  z-index: -1;
-  
-} */
-#sec-6 #portret img {
-  position: relative;
-  left: 979px;
-  bottom: 252px;
+#sec-6 .right-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
 /* sec-7 */
@@ -719,7 +614,6 @@ header nav {
 }
 #sec-7 .flex-wrapper-4 h3 {
   max-width: 461px;
-  height: 100px;
   font-weight: 600;
   font-size: 35px;
   line-height: 50px;
@@ -782,7 +676,6 @@ header nav {
   line-height: 75px;
   text-align: center;
   max-width: 791px;
-  height: 150px;
   margin-left: 250px;
 }
 #pricing p {
@@ -791,7 +684,6 @@ header nav {
   line-height: 30px;
   text-align: center;
   max-width: 539px;
-  height: 60px;
   margin-left: 375px;
 }
 #pricing img {
@@ -826,7 +718,6 @@ header nav {
   line-height: 75px;
   text-align: center;
   max-width: 784px;
-  height: 150px;
   margin-left: 252px;
 }
 .sec-8 p {
@@ -861,7 +752,6 @@ header nav {
   font-size: 40px;
   line-height: 50px;
   max-width: 257px;
-  height: 50px;
 }
 .flex-wrapper-6 img {
   margin: 28px 0 26px;
@@ -871,7 +761,6 @@ header nav {
   font-size: 20px;
   line-height: 30px;
   max-width: 290px;
-  height: 90px;
   margin: 5px 0 15px;
 }
 .flex-wrapper-6 a {
@@ -879,7 +768,6 @@ header nav {
   font-size: 20px;
   line-height: 30px;
   max-width: 107px;
-  height: 30px;
 }
 
 .flex-wrapper-7 .hp-product-1 h2 {
@@ -887,7 +775,6 @@ header nav {
   font-size: 21px;
   line-height: 25px;
   max-width: 79px;
-  height: 25px;
   margin-bottom: 15px;
 }
 .flex-wrapper-7 .grp-links-1 li a {
@@ -909,7 +796,6 @@ header nav {
   font-size: 21px;
   line-height: 25px;
   max-width: 79px;
-  height: 25px;
   margin-bottom: 15px;
 }
 .flex-wrapper-7 .grp-links-2 li a {
@@ -931,7 +817,6 @@ header nav {
   font-size: 21px;
   line-height: 25px;
   max-width: 79px;
-  height: 25px;
   margin-bottom: 15px;
 }
 .flex-wrapper-7 .grp-links-3 li a {
@@ -954,7 +839,6 @@ header nav {
   font-size: 21px;
   line-height: 25px;
   max-width: 79px;
-  height: 22px;
   margin-bottom: 15px;
 }
 .flex-wrapper-7 .grp-links-4 li a {
@@ -969,54 +853,46 @@ header nav {
 }
 
 #case-studies {
-  /* padding: 92px 0 95px; */
   padding-top: 92px;
   background-color: rgba(238, 238, 238, 1);
-  /* border-bottom: 1px solid black; */
-  position: relative;
 }
 
-#case-studies .container {
+#case-studies .linie {
   border-bottom: 1px solid black;
-  padding-bottom: 95px;
-  /* пытался сделать линию размеру контейнеру ,но не получается  */
-}
+  padding-bottom: 98px;
+  }
 
 .flex-wrapper-7 {
-  position: absolute;
-  top: 98px;
-  right: 85px;
   list-style: none;
-  display: flex;
 }
-
+.left-case {
+  width: 439px;
+}
+.right-case {
+  margin-top: 10px;
+}
 /* sec-footer */
 
 #resources {
-  padding-top: 50px;
+  padding-top: 55px;
   padding-bottom: 48px;
   background-color: rgba(238, 238, 238, 1);
 }
 
 #resources p {
   max-width: 301px;
-  height: 30px;
   margin-left: 14px;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
 }
 #resources .rights span {
-  /* max-width: 73px; */
-  height: 15px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   margin-left: 15px;
 }
 #resources .rights p {
-  /* max-width: 109px; */
-  height: 15px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
