@@ -9,17 +9,43 @@
   <body>
     <header>
       <div class="container">
-        <div class="flex header-content">
+
+        <div class="burger-menu">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+            <div class="logo-mobile">
+              <img src="./img/logo.svg" alt="">
+            </div>
+          <nav class="navbar">
+            <a href="#product">Product</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#case-studies">Case studies</a>
+            <a href="#resources">Resources</a>
+            <div class="flex btn-group">
+              <button class="btn-1">Log in</button>
+              <button class="btn-2">Try it free</button>
+            </div>
+          </nav>
+        </div>
+
+        <div class="flex header-content desctop">
           <div>
             <img src="./img/logo.svg" alt="logo" width="130" height="28" />
           </div>
-          <nav>
+
+          <nav class="navbar">
             <a href="#product">Product</a>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#case-studies">Case studies</a>
             <a href="#resources">Resources</a>
           </nav>
+
           <div class="flex btn-group">
             <button class="btn-1">Log in</button>
             <button class="btn-2">Try it free</button>
@@ -143,7 +169,7 @@
           <div class="flex-container">
             <div class="flex-column">
               <div>
-                <img src="./img/Rectangle.png" alt="" />
+                <img src="./img/Rectangle.png" alt="img" />
                 <h6>Web apps</h6>
                 <p>
                   Any kind of web apps — backend, frontend, single page, blogs —
@@ -151,7 +177,7 @@
                 </p>
               </div>
               <div class="margin-right-1">
-                <img src="./img/Rectangle-2.png" alt="" />
+                <img src="./img/Rectangle-2.png" alt="img" />
                 <h6>Mobile apps</h6>
                 <p>
                   Upload any mobile platform language files. Embed Lokalise iOS
@@ -159,7 +185,7 @@
                 </p>
               </div>
               <div class="game-text margin-right-2">
-                <img src="./img/Rectangle-3.png" alt="" />
+                <img src="./img/Rectangle-3.png" alt="img" />
                 <h6>Games</h6>
                 <p>
                   Our cloud software is trusted by many leading game developers
@@ -167,12 +193,12 @@
                 </p>
               </div>
               <div>
-                <img src="./img/Rectangle-4.png" alt="" />
+                <img src="./img/Rectangle-4.png" alt="img" />
                 <h6>Documents</h6>
                 <p>Upload your DOCX and static HTML files.</p>
               </div>
               <div class="emails-text">
-                <img src="./img/Rectangle-5.png" alt="" />
+                <img src="./img/Rectangle-5.png" alt="img" />
                 <h6>Marketing e-mails</h6>
                 <p>
                   Integrate with Salesforce Marketing Cloud (coming soon) or
@@ -180,7 +206,7 @@
                 </p>
               </div>
               <div class="margin-right-3">
-                <img src="./img/Rectangle-6.png" alt="" />
+                <img src="./img/Rectangle-6.png" alt="img" />
                 <h6>IoT</h6>
                 <p>We support most popular localization file formats.</p>
               </div>
@@ -210,7 +236,7 @@
               <p>
                 Set up an integration with your code repository or your own
                 custom SDK via Lokalise's
-                <span class="underline">powerful API</span>. Do that once, and
+                <span class="underline">powerful API.</span>Do that once, and
                 every time you make changes in the code, they'll be
                 automatically imported to Lokalise for translation.
               </p>
@@ -253,65 +279,67 @@
       </section>
       <section id="sec-7">
         <div class="container">
-          <div class="flex">
-            <div class="flex flex-wrapper-4">
-              <img src="./img/cake.svg" alt="cake" />
-              <h3>The most-loved translation management software</h3>
-            </div>
-
-            <div class="flex flex-wrapper-5">
-              <div class="grp-10">
-                <div>
-                  <svg width="36" height="36">
-                    <use href="./sprite.svg#g-2"></use>
-                  </svg>
-                </div>
-                <div class="star-section">
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                </div>
-                <div>
-                  <p>USERS LOVE US</p>
-                </div>
+          <div class="flex-container">
+            <div class="flex">
+              <div class="flex flex-wrapper-4">
+                <img src="./img/cake.svg" alt="cake" />
+                <h3>The most-loved translation management software</h3>
               </div>
-              <div class="grp-11">
-                <div>
-                  <svg width="150" height="37">
-                    <use href="./sprite.svg#capterra"></use>
-                  </svg>
+
+              <div class="flex flex-wrapper-5">
+                <div class="grp-10">
+                  <div>
+                    <svg width="36" height="36">
+                      <use href="./sprite.svg#g-2"></use>
+                    </svg>
+                  </div>
+                  <div class="star-section">
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p>USERS LOVE US</p>
+                  </div>
                 </div>
-                <div class="star-section">
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./sprite.svg#star"></use>
-                  </svg>
-                </div>
-                <div>
-                  <p>HIGHEST RATED</p>
+                <div class="grp-11">
+                  <div>
+                    <svg width="150" height="37">
+                      <use href="./sprite.svg#capterra"></use>
+                    </svg>
+                  </div>
+                  <div class="star-section">
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                    <svg width="20" height="20">
+                      <use href="./sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p>HIGHEST RATED</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -357,53 +385,55 @@
               </div>
             </div>
             <div class="right-case">
-              <div class="flex flex-wrapper-7">
-                <div class="hp-product-1">
-                  <h2>Product</h2>
-                  <div class="grp-links-1">
-                    <li><a href="#">For developers</a></li>
-                    <li><a href="#">For managers</a></li>
-                    <li><a href="#">For translators</a></li>
-                    <li><a href="#">For designers</a></li>
-                    <li><a href="#">Integrations</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Automations</a></li>
+              <div class="flex-container">
+                <div class="flex flex-wrapper-7">
+                  <div class="hp-product-1">
+                    <h2>Product</h2>
+                    <div class="grp-links-1">
+                      <li><a href="#">For developers</a></li>
+                      <li><a href="#">For managers</a></li>
+                      <li><a href="#">For translators</a></li>
+                      <li><a href="#">For designers</a></li>
+                      <li><a href="#">Integrations</a></li>
+                      <li><a href="#">Security</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Automations</a></li>
+                    </div>
                   </div>
-                </div>
-                <div class="hp-product-2">
-                  <h2>Support</h2>
-                  <div class="grp-links-2">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Status</a></li>
-                    <li><a href="#">Product Updates</a></li>
-                    <li><a href="#">CLI Tool</a></li>
-                    <li><a href="#">API Reference</a></li>
-                    <li><a href="#">iOS and Android SDK</a></li>
-                    <li><a href="#">Supported File Formats</a></li>
+                  <div class="hp-product-2">
+                    <h2>Support</h2>
+                    <div class="grp-links-2">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Documentation</a></li>
+                      <li><a href="#">Status</a></li>
+                      <li><a href="#">Product Updates</a></li>
+                      <li><a href="#">CLI Tool</a></li>
+                      <li><a href="#">API Reference</a></li>
+                      <li><a href="#">iOS and Android SDK</a></li>
+                      <li><a href="#">Supported File Formats</a></li>
+                    </div>
                   </div>
-                </div>
-                <div class="hp-product-3">
-                  <h2>Company</h2>
-                  <div class="grp-links-3">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers | We`re Hiring</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Media Kit</a></li>
+                  <div class="hp-product-3">
+                    <h2>Company</h2>
+                    <div class="grp-links-3">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers | We`re Hiring</a></li>
+                      <li><a href="#">Case Studies</a></li>
+                      <li><a href="#">Media Kit</a></li>
+                    </div>
                   </div>
-                </div>
-                <div class="hp-product-4">
-                  <h2>Legal</h2>
-                  <div class="grp-links-4">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Privacy Shield</a></li>
-                    <li><a href="#">DPA</a></li>
-                    <li><a href="#">List of Sub-processors</a></li>
-                    <li><a href="#">Candidates Privacy Notice</a></li>
+                  <div class="hp-product-4">
+                    <h2>Legal</h2>
+                    <div class="grp-links-4">
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Privacy Shield</a></li>
+                      <li><a href="#">DPA</a></li>
+                      <li><a href="#">List of Sub-processors</a></li>
+                      <li><a href="#">Candidates Privacy Notice</a></li>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -419,7 +449,7 @@
           <svg width="90" height="21">
             <use href="./sprite.svg#lokalise"></use>
           </svg>
-          <p>
+          <p id="footer-text">
             Localization workflow for your web and mobile apps, games and
             digital content.
           </p>
